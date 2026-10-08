@@ -17,7 +17,6 @@
 <meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#111112" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181A'/%3E%3Ccircle cx='32' cy='37' r='12' fill='none' stroke='%23fff' stroke-width='8'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where can I buy one?", "acceptedAnswer": {"@type": "Answer", "text": "On Amazon UK. Pop your email in and you'll hear as soon as stock is available."}}, {"@type": "Question", "name": "Is it real marble?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every design is a marble print, so you get the look of stone without the weight or the price tag."}}, {"@type": "Question", "name": "How big is it?", "acceptedAnswer": {"@type": "Answer", "text": "90 × 40 cm and 3 mm thick. Big enough for a full-size keyboard and a mouse side by side."}}, {"@type": "Question", "name": "Who delivers it?", "acceptedAnswer": {"@type": "Answer", "text": "Orders are fulfilled and delivered by Amazon, with Amazon's standard delivery options."}}, {"@type": "Question", "name": "What about returns?", "acceptedAnswer": {"@type": "Answer", "text": "Because orders go through Amazon, Amazon's standard returns policy applies."}}]}</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProductGroup","name":"LURNO marble-print desk mats","brand":{"@type":"Brand","name":"LURNO"},
  "description":"Marble-print desk mats in six designs, 90 x 40 cm, 3 mm thick.",
@@ -145,16 +144,6 @@ header nav a.txt{text-decoration:none;color:var(--mid)} header nav a.txt:hover{c
 .about p{font-size:clamp(22px,2.6vw,32px);font-weight:600;letter-spacing:-.02em;line-height:1.3;max-width:28ch;margin:0}
 .about p span{color:var(--mid)}
 
-/* SIGNUP */
-.signup{padding:0 0 clamp(64px,9vw,110px)}
-.signup .box{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:center}
-.signup h2{margin:0 0 6px;font-size:clamp(24px,2.8vw,34px);letter-spacing:-.025em}
-.signup p{margin:0;color:var(--mid)}
-form{display:flex;gap:10px;flex-wrap:wrap}
-input[type=email]{flex:1 1 220px;font:inherit;font-size:15px;padding:12px 18px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px}
-input[type=email]:focus{border-color:var(--accent);outline:none}
-.msg{flex-basis:100%;font-size:13px;min-height:1.3em;color:var(--mid);margin-left:18px}
-@media (max-width:760px){.signup .box{grid-template-columns:1fr}}
 
 footer{border-top:1px solid var(--line);padding:28px 0}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--mid)}
@@ -204,20 +193,6 @@ footer nav{display:flex;gap:20px} footer nav a{text-decoration:none} footer nav 
 .diagram svg{width:100%;height:auto;display:block;color:var(--mid);font-family:inherit}
 .diagram figcaption{margin-top:16px;font-size:13px;color:var(--mid)}
 
-/* faq */
-.faq{padding:clamp(64px,9vw,110px) 0;border-top:1px solid var(--line)}
-.faqgrid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:32px 72px}
-.faq h2{font-size:clamp(32px,4.4vw,56px);font-weight:800;letter-spacing:-.035em;margin:0 0 12px;line-height:1}
-.faq .intro{color:var(--mid);margin:0;max-width:26ch}
-.qs details{border-bottom:1px solid var(--line)}
-.qs details:first-child{border-top:1px solid var(--line)}
-.qs summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-size:18px;font-weight:600;letter-spacing:-.01em}
-.qs summary::-webkit-details-marker{display:none}
-.qs summary::after{content:"+";font-size:26px;font-weight:300;line-height:1;color:var(--accent);transition:transform .25s}
-.qs details[open] summary::after{transform:rotate(45deg)}
-.qs summary:hover{color:var(--accent)}
-.qs details p{margin:-6px 0 22px;color:var(--mid);max-width:56ch}
-@media (max-width:860px){.faqgrid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.ticker .track{animation:none}}
 
 
@@ -353,9 +328,7 @@ header nav a.txt:hover::after,header nav a.txt[aria-current]::after{transform:sc
     <nav aria-label="Main">
       <a class="txt" href="#collection">Collection</a>
       <a class="txt" href="#size">Size</a>
-      <a class="txt" href="#faq">FAQ</a>
       <button class="theme" id="themeBtn" type="button" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
-      <a class="btn sm" href="#notify">Notify me</a>
     </nav>
   </div>
   <div class="progress" id="progress" aria-hidden="true"></div>
@@ -369,10 +342,9 @@ header nav a.txt:hover::after,header nav a.txt[aria-current]::after{transform:sc
         <div class="colorrow"><div class="colorbar" id="colorbar" aria-hidden="true"></div><span class="n">6 designs · 🇬🇧 Designed in the UK</span></div>
         <h1 id="h1">Marble for your desk.</h1>
         <p class="lede">Six marble-print designs, one generous size.</p>
-        <div class="price"><b>£13.99</b><span>each · 90&nbsp;×&nbsp;40&nbsp;cm · 3&nbsp;mm · Amazon&nbsp;UK</span></div>
+        <div class="price"><b>£13.99</b><span>each · 90&nbsp;×&nbsp;40&nbsp;cm · 3&nbsp;mm</span></div>
         <div class="actions">
           <a class="btn" href="#collection">See the collection</a>
-          <a class="textlink" href="#notify">Get notified <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="viewer">
@@ -439,36 +411,10 @@ header nav a.txt:hover::after,header nav a.txt[aria-current]::after{transform:sc
     </div>
   </section>
 
-  <section class="faq" id="faq">
-    <div class="wrap faqgrid">
-      <div class="reveal"><h2>Questions.</h2><p class="intro">The short answers to the things people ask first.</p></div>
-      <div class="qs reveal">
-        <details><summary>Where can I buy one?</summary><p>On Amazon UK. Pop your email in below and you'll hear as soon as stock is available.</p></details>
-        <details><summary>Is it real marble?</summary><p>No. Every design is a marble print, so you get the look of stone without the weight or the price tag.</p></details>
-        <details><summary>How big is it?</summary><p>90 × 40 cm and 3 mm thick. Big enough for a full-size keyboard and a mouse side by side.</p></details>
-        <details><summary>Who delivers it?</summary><p>Orders are fulfilled and delivered by Amazon, with Amazon's standard delivery options.</p></details>
-        <details><summary>What about returns?</summary><p>Because orders go through Amazon, Amazon's standard returns policy applies.</p></details>
-      </div>
-    </div>
-  </section>
 
   <section class="about">
     <div class="wrap reveal">
       <p>LURNO is a one-person, UK-based brand, <span>built around six marble-print desk mats.</span></p>
-    </div>
-  </section>
-
-  <section class="signup" id="notify">
-    <div class="wrap">
-      <div class="box reveal">
-        <div><h2>Be first when they land.</h2><p>One email when the mats go live. No spam.</p></div>
-        <form id="signup" novalidate>
-          <label for="email" class="sr">Email address</label>
-          <input type="email" id="email" placeholder="Your email address" autocomplete="email">
-          <button class="btn" type="submit">Notify me</button>
-          <div class="msg" id="msg" aria-live="polite"></div>
-        </form>
-      </div>
     </div>
   </section>
 </main>
@@ -476,7 +422,7 @@ header nav a.txt:hover::after,header nav a.txt[aria-current]::after{transform:sc
 <footer>
   <div class="wrap">
     <span class="logo" role="img" aria-label="LURNO"></span>
-    <nav aria-label="Footer"><a href="#collection">Collection</a><a href="#size">Size</a><a href="#faq">FAQ</a><a href="#notify">Notify me</a><a href="#top">Back to top ↑</a></nav>
+    <nav aria-label="Footer"><a href="#collection">Collection</a><a href="#size">Size</a><a href="#top">Back to top ↑</a></nav>
     <span>© 2026 LURNO · lurno.store</span>
   </div>
 </footer>
@@ -489,7 +435,7 @@ header nav a.txt:hover::after,header nav a.txt[aria-current]::after{transform:sc
     <img id="lbImg" alt="">
     <div class="info">
       <div><h3 id="lbName"></h3><p id="lbLine"></p></div>
-      <div class="r"><div class="chips" id="lbChips" aria-hidden="true"></div><span class="status"><span class="dot" aria-hidden="true"></span>Sold out</span><button class="share" id="lbShare" type="button">Share</button><a href="#notify" id="lbNotify">Notify me</a></div>
+      <div class="r"><div class="chips" id="lbChips" aria-hidden="true"></div><span class="status"><span class="dot" aria-hidden="true"></span>Sold out</span><button class="share" id="lbShare" type="button">Share</button></div>
     </div>
   </div>
 </div>
@@ -527,7 +473,8 @@ function show(i,user){
 }
 designs.forEach((d,i)=>{const b=document.createElement("button");b.type="button";b.title=d.name;b.setAttribute("aria-label",d.name);
   b.style.backgroundImage=`url(${d.img})`;b.onclick=()=>show(i,true);$("picker").appendChild(b);});
-front.src=designs[1].img; show(1);
+const startI=Math.max(0,designs.findIndex(d=>d.name==="Tide"));
+front.src=designs[startI].img; show(startI);
 $("picker").addEventListener("keydown",e=>{if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;e.preventDefault();
   const n=(cur+(e.key==="ArrowRight"?1:-1)+designs.length)%designs.length;show(n,true);$("picker").children[n].focus();});
 /* only animate what's on screen: autoplay, glow and ticker pause when out of view or the tab is hidden */
@@ -559,7 +506,6 @@ function lbOpen(i){lastFocus=document.activeElement;lbShow(i);lb.classList.add("
 function lbClose(){lb.classList.remove("open");document.body.style.overflow="";try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}lastFocus&&lastFocus.focus();}
 $("grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)lbOpen(+c.dataset.i);});
 $("lbX").onclick=lbClose; $("lbPrev").onclick=()=>lbShow(lbi-1); $("lbNext").onclick=()=>lbShow(lbi+1);
-$("lbNotify").onclick=()=>lbClose();
 lb.addEventListener("click",e=>{if(e.target===lb)lbClose();});
 addEventListener("keydown",e=>{if(!lb.classList.contains("open"))return;
   if(e.key==="Escape")lbClose(); if(e.key==="ArrowRight")lbShow(lbi+1); if(e.key==="ArrowLeft")lbShow(lbi-1);});
@@ -568,7 +514,8 @@ lb.addEventListener("touchend",e=>{if(tx==null)return;const dx=e.changedTouches[
 
 /* reveal */
 /* ticker */
-$("ticker").innerHTML=[...designs,...designs].map(d=>`<span class="item"><i style="background-image:url(${d.img})"></i>${d.name}<span class="sep">·</span></span>`).join("");
+const tickOrder=(i=>i<0?designs:[...designs.slice(i),...designs.slice(0,i)])(designs.findIndex(d=>d.name==="Tide"));
+$("ticker").innerHTML=[...tickOrder,...tickOrder].map(d=>`<span class="item"><i style="background-image:url(${d.img})"></i>${d.name}<span class="sep">·</span></span>`).join("");
 
 /* filters */
 $("filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const f=b.dataset.f;
@@ -587,7 +534,7 @@ nb.addEventListener("pointermove",e=>{const r=nb.getBoundingClientRect();nb.styl
 const navLinks=[...document.querySelectorAll("header nav a.txt")];
 const navIo=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;
   navLinks.forEach(a=>a.getAttribute("href")==="#"+e.target.id?a.setAttribute("aria-current","true"):a.removeAttribute("aria-current"));}),{rootMargin:"-45% 0px -50% 0px"});
-["collection","size","faq"].forEach(id=>navIo.observe($(id)));
+["collection","size"].forEach(id=>navIo.observe($(id)));
 
 /* keep keyboard focus inside the lightbox while it is open */
 lb.addEventListener("keydown",e=>{if(e.key!=="Tab")return;const f=[...lb.querySelectorAll("button,a")],first=f[0],last=f[f.length-1];
@@ -650,10 +597,6 @@ const numIo=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)ret
       if(p<1)requestAnimationFrame(tick);else dd.textContent=t;})(t0);});}),{threshold:.5});
 numIo.observe($("specrow"));
 
-/* signup (placeholder until a real list is connected) */
-$("signup").addEventListener("submit",e=>{e.preventDefault();const inp=$("email"),v=inp.value.trim(),m=$("msg"),btn=e.target.querySelector("button");
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.textContent="Enter an email address, like name@example.com.";inp.focus();return;}
-  m.textContent="Thanks. You'll get one email when the mats go live.";btn.textContent="You're on the list";btn.disabled=true;inp.disabled=true;});
 </script>
 </body>
 </html>
